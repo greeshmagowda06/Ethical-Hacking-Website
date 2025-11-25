@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && node -e \"require('fs').cpSync('./dist', './docs', {recursive: true, force: true})\" && gh-pages -d docs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
