@@ -163,7 +163,7 @@ const About = () => {
                   variant="outline"
                   className="flex items-center gap-2"
                 >
-                  <a href="mailto:ethicalhacking784@gmail.com">
+                  <a href="mailto:vgreeshmagowda06@gmail.com">
                     <Mail className="h-4 w-4" />
                     Send Email
                   </a>

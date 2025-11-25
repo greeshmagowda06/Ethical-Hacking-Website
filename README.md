@@ -25,17 +25,6 @@ Learn how common security vulnerabilities work, why they're dangerous, and most 
 
 ---
 
-## ⚙️ Tech Stack
-
-- **Frontend Framework:** React 18 + TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS + Shadcn UI Components
-- **Routing:** React Router
-- **State Management:** React Hooks + React Query
-- **Icons:** Lucide React
-
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -219,7 +208,7 @@ This project is open source and available under the **MIT License**.
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/greeshmagowda06)
 - 🐙 [GitHub](https://github.com/greeshmagowda06)
-- 📧 Email: greeshmagowda06@gmail.com
+- 📧 Email: vgreeshmagowda06@gmail.com
 
 ---
 

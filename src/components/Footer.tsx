@@ -23,7 +23,7 @@ export const Footer = () => {
           </Button>
 
           <Button asChild variant="ghost" size="sm">
-            <a href="mailto:ethicalhacking784@gmail.com">
+            <a href="mailto:vgreeshmagowda06@gmail.com">
               <Mail className="h-4 w-4 mr-2" /> Contact
             </a>
           </Button>
