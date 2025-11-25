@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 142 100% 85%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 142 100% 85%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 142 100% 85%;
+
+    --primary: 142 100% 50%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 180 100% 40%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 142 50% 60%;
+
+    --accent: 142 100% 50%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 30% 20%;
+    --input: 142 30% 15%;
+    --ring: 142 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Cyber theme colors */
+    --cyber-green: 142 100% 50%;
+    --cyber-cyan: 180 100% 40%;
+    --cyber-red: 0 100% 50%;
+    --cyber-glow: 142 100% 50%;
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(142 100% 30%), hsl(180 100% 30%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 100% 40%), hsl(15 100% 40%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(var(--cyber-green) / 0.3);
+    --shadow-cyber: 0 4px 20px hsl(var(--cyber-green) / 0.2);
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 142 100% 85%;
+    --sidebar-primary: 142 100% 50%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 142 100% 85%;
+    --sidebar-border: 142 30% 20%;
+    --sidebar-ring: 142 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre {
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--cyber-green) / 0.5);
+  }
+
+  .cyber-glow {
+    box-shadow: 0 0 20px hsl(var(--cyber-green) / 0.3);
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px hsl(var(--cyber-green) / 0.2);
+    }
+    to {
+      box-shadow: 0 0 20px hsl(var(--cyber-green) / 0.6);
+    }
+  }
+}
