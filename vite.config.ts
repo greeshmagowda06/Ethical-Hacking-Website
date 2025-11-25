@@ -4,8 +4,9 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use repo-name base when building for production so GitHub Pages serves assets correctly
-  base: mode === "development" ? "/" : "/cyber-sandbox/",
+  // Use a relative base for production so the site works when hosted under any path (GitHub Pages)
+  // `import.meta.env.BASE_URL` will reflect this at runtime. Using './' makes asset links relative.
+  base: mode === "development" ? "/" : "./",
   server: {
     host: "::",
     port: 8080,
